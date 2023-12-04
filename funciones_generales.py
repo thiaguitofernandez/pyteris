@@ -53,6 +53,9 @@ def chequeo_eventos(jugador,juego,pantalla,grilla):
                                                 juego.pantalla_actual = "pantalla menu principal"
 
                                         elif juego.boton_puntuaciones.collidepoint(posicion_M):
+                                                grilla.reiniciar()
+                                                juego.puntuacion = 0
+                                                juego.reiniciar_jugador()         
                                                 juego.pantalla_actual = "pantalla puntuaciones"
 
                         case "pantalla puntuaciones":
